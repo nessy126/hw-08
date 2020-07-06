@@ -46,6 +46,7 @@ h6 {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 450px;
+    position: relative;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -70,16 +71,19 @@ header {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  height: 60px;
+  padding: 0;
+  position: relative;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .page-header {
-    min-height: 60px;
+    height: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header {
-    min-height: 80px;
+    height: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -114,29 +118,30 @@ footer {
 }
 
 .footer-container {
+  display: flex;
+  justify-content: center;
   padding-top: 48px;
   align-items: baseline;
   margin-bottom: 28px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
-    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
 .footer-center,
 .footer-left {
   margin-bottom: 60px;
+  width: calc(100% - 30px)/2;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-center,
 .footer-left {
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -167,6 +172,7 @@ footer {
   color: #2196f3;
   font-family: raleway, sans-serif;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.2;
   white-space: nowrap;
   text-align: left;
@@ -216,7 +222,10 @@ footer {
 }
 
 .burger {
-  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: 1px solid orange;
   width: 24px;
   height: 16px;
   vertical-align: middle;
@@ -228,6 +237,7 @@ footer {
   margin-right: 23px;
   border: 1px solid transparent;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .burger-icon {
