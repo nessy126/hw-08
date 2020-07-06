@@ -7,9 +7,9 @@
   // outline: none !important;
   width: 24px;
   height: 16px;
-  vertical-align: bottom;
+  vertical-align: middle;
   text-align: right;
-  // padding: 22px 23px;
+  padding: 8px 12px;
   margin-left: auto;
   margin-top: 22px;
   margin-bottom: 22px;
@@ -29,9 +29,6 @@
       outline: 1px solid $accent-color;
     }
   }
-
-
-
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .site-nav {
