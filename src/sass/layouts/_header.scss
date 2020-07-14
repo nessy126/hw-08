@@ -4,17 +4,20 @@ header {
 
 .page-header {
   border-bottom: 1px solid $top-line;
+  height: 60px;
+  padding: 0;
+  position: relative;
   }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .page-header {
-    min-height: 60px;
+    height: 60px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header {
-    min-height: 80px;
+    height: 80px;
   }
 }
 
