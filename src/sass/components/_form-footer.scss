@@ -1,31 +1,37 @@
 .form-footer {
-  display: inline-block;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  width: 100%;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  margin-right: auto;
+  margin-left: auto;
+}
 
-   @media screen and (min-width: 1200px) {
-     flex-direction: row;
-   }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: start;
+  }
 }
 
 .footer-input {
   padding: 12px 18px;
-  width: 94%;
+  max-width: 450px;
+  min-width: 358px;
   border: 1px solid $border-input-email;
   box-shadow: 0 4px 4px $border-input-email-shaddow;
   border-radius: 4px;
   background-color: $footer-bg-color;
   display: block;
   text-align: left;
- @media screen and (min-width: 468px) and (max-width: 1199px) {
-   width: 450px;
- }
+  box-sizing: border-box;
+  
 
-    @media screen and (min-width: 1200px) {
-      width: 358px;
-    }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   width: 450px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
-
