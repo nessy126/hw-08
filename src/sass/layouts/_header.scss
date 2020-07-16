@@ -3,11 +3,11 @@ header {
 }
 
 .page-header {
+  position: relative;
   border-bottom: 1px solid $top-line;
   height: 60px;
   padding: 0;
-  position: relative;
-  }
+}
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .page-header {
@@ -22,13 +22,9 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
-    .page-header {
-      position: fixed;
-      height: 80px;
-      width: 100%;
-      background-color: $primary-bg-color;
-      top: 0;
-      left: 0;
-      z-index: 1;
+  .page-header {
+    height: 80px;
+    width: 100%;
+    background-color: $primary-bg-color;
   }
 }

@@ -7,6 +7,10 @@ body {
   margin: 0;
   z-index: 2;
   outline: 1px solid $accent-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .list {
