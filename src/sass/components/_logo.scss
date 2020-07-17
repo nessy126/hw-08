@@ -8,6 +8,17 @@
   white-space: nowrap;
   text-align: left;
   vertical-align: middle;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .logo-span {
@@ -24,32 +35,15 @@
   text-align: center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
- .logo {
-    font-size: 24px;
-    line-height: 1.17;
-    text-align: center;
-    vertical-align: middle;
- }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .logo-header {
+.logo-header {
+  @media screen and (min-width: 100px) and (max-width: 767px) {
     padding-top: 16px;
     padding-bottom: 16px;
     text-align: left;
   }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .logo-header {
-  padding-top: 26px;
-  padding-bottom: 26px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .logo {
-    text-align: left;
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }

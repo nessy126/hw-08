@@ -12,7 +12,8 @@
 }
 
 .feature-item {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  
+  @media screen and (min-width: 100px) and (max-width: 767px) {
   margin-bottom: 30px;
   margin-right: 0;
   width: 450px;

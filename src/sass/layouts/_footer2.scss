@@ -1,5 +1,8 @@
-.footer {
+footer {
   background-color: $footer-bg-color;
+}
+
+.footer {
   flex-direction: row;
   @media screen and (min-width: 1200px) {
   display: flex;
