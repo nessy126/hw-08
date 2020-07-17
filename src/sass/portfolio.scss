@@ -9,12 +9,14 @@
 @import './layouts/sections';
 @import './layouts/footer2';
 
+@import './components/modal-menu';
 @import './components/logo';
 @import './components/menu';
 @import './components/contacts';
+@import './components/hidden';
 @import './components/title';
 @import './components/buttons';
-@import './components/hidden';
+@import "./components/modal";
 @import './components/social';
 @import './components/address';
 @import './components/form-footer';
