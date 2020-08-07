@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\icon-send.svg":[["icon-send.4d88145b.svg","images/icon-send.svg"],"images/icon-send.svg"],"./..\\images\\form\\check.svg":[["check.ca1ec082.svg","images/form/check.svg"],"images/form/check.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"portfolio.js":[function(require,module,exports) {
+},{"./..\\images\\icon-send.svg":[["icon-send.4d88145b.svg","images/icon-send.svg"],"images/icon-send.svg"],"./..\\images\\form\\checked.svg":[["checked.23b0a893.svg","images/form/checked.svg"],"images/form/checked.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"portfolio.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/portfolio.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65367" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53844" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
